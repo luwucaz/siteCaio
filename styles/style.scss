@@ -1,0 +1,152 @@
+#campo_util {
+  width: 1333px;
+  height: 781px;
+  flex-shrink: 0;
+
+  border-radius: 45px;
+  border: 3px solid var(--contorno, #DCDCDC);
+
+  .header {
+    width: 409px;
+    height: 94px;
+    flex-shrink: 0;
+
+    h1 {
+      color: #000;
+
+      /* header */
+      font-family: Oswald;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    h2 {
+      color: var(--subtitulo, rgba(0, 0, 0, 0.33));
+
+      /* subtitle */
+      font-family: Noto Sans;
+      font-size: 18.382px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .linha {
+      width: 149px;
+      height: 0px;
+      flex-shrink: 0;
+
+      stroke-width: 2px;
+      stroke: rgba(0, 0, 0, 0.33);
+    }
+  }
+
+  .campo_busca {
+    display: flex;
+    width: 353px;
+    padding: 13px 21px;
+    align-items: center;
+    gap: 126px;
+
+    border-radius: 49px;
+    border: 3px solid var(--contorno, #DCDCDC);
+
+    p {
+      color: var(--subtitulo, rgba(0, 0, 0, 0.33));
+      font-family: Noto Sans;
+      font-size: 18.382px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.471px;
+    }
+  }
+
+  .campo_modais {
+    p {
+      color: var(--subtitulo, rgba(0, 0, 0, 0.33));
+
+      /* subtitle */
+      font-family: Noto Sans;
+      font-size: 18.382px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .modal1 {
+      width: 400px;
+      height: 151px;
+      border-radius: 44px;
+      background: #295AA6;
+
+      h1 {
+        color: #FFF;
+
+        /* header */
+        font-family: Oswald;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+      h2 {
+        color: rgba(255, 255, 255, 0.33);
+
+        /* subtitle */
+        font-family: Noto Sans;
+        font-size: 18.382px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+
+  .tabela {
+    p {
+      color: var(--subtitulo, rgba(0, 0, 0, 0.33));
+      font-family: Noto Sans;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .tabela__header {
+      width: 1253px;
+      height: 69px;
+      flex-shrink: 0;
+
+      border-radius: 100px;
+      border: 2px solid var(--contorno, #DCDCDC);
+
+      h1 {
+        color: #000;
+
+        /* lista titulo */
+        font-family: Oswald;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+
+    .tabela__baixo {
+      h2 {
+        color: #000;
+
+        /* subtitle */
+        font-family: Noto Sans;
+        font-size: 18.382px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}
