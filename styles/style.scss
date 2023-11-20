@@ -1,3 +1,48 @@
+@mixin modal($corFundo) {
+  width: 380px;
+  height: 151px;
+  border-radius: 44px;
+  background: $corFundo;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 24px;
+
+  h1 {
+    color: #fff;
+    /* header */
+    font-family: Oswald;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    margin: 0;
+  }
+
+  h2 {
+    color: rgba(255, 255, 255, 0.33);
+
+    /* subtitle */
+    font-family: Noto Sans;
+    font-size: 18.382px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin: 0;
+  }
+
+  img {
+    width: 77px;
+    height: 77px;
+    flex-shrink: 0;
+  }
+}
+
 body {
   display: flex;
   align-items: center;
@@ -13,7 +58,7 @@ body {
     grid-template-rows: repeat(4, auto);
 
     border-radius: 45px;
-    border: 3px solid var(--contorno, #DCDCDC);
+    border: 3px solid var(--contorno, #dcdcdc);
 
     .header {
       display: flex;
@@ -29,7 +74,7 @@ body {
         justify-content: space-between;
 
         border-radius: 49px;
-        border: 3px solid var(--contorno, #DCDCDC);
+        border: 3px solid var(--contorno, #dcdcdc);
 
         p {
           color: var(--subtitulo, rgba(0, 0, 0, 0.33));
@@ -78,7 +123,7 @@ body {
       }
     }
 
-    .campo_modais {
+    .centro_modais {
       p {
         color: var(--subtitulo, rgba(0, 0, 0, 0.33));
 
@@ -90,41 +135,20 @@ body {
         line-height: normal;
       }
 
-      .modal1 {
-        width: 400px;
-        height: 151px;
-        border-radius: 44px;
-        background: #295AA6;
-
+      .centro_modais__models {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
 
-        padding-left: 24px;
-
-        h1 {
-          color: #FFF;
-          /* header */
-          font-family: Oswald;
-          font-size: 25px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-
-          margin: 0;
+        .modal1 {
+          @include modal(#295aa6);
         }
 
-        h2 {
-          color: rgba(255, 255, 255, 0.33);
+        .modal2 {
+          @include modal(#ffc102);
+        }
 
-          /* subtitle */
-          font-family: Noto Sans;
-          font-size: 18.382px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-
-          margin: 0;
+        .modal3 {
+          @include modal(#c6202c);
         }
       }
     }
@@ -145,12 +169,12 @@ body {
       }
 
       .tabela__header {
-        width: 1253px;
+        width: auto;
         height: 69px;
         flex-shrink: 0;
 
         border-radius: 100px;
-        border: 2px solid var(--contorno, #DCDCDC);
+        border: 2px solid var(--contorno, #dcdcdc);
 
         display: flex;
         align-items: center;
@@ -177,11 +201,11 @@ body {
       }
 
       .tabela__baixo {
-        width: 1253px;
+        width: auto;
         height: 69px;
         flex-shrink: 0;
 
-        border: 2px solid var(--contorno, #DCDCDC);
+        border: 2px solid var(--contorno, #dcdcdc);
 
         display: flex;
         align-items: center;

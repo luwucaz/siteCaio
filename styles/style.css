@@ -11,7 +11,7 @@ body #campo_util {
   display: grid;
   grid-template-rows: repeat(4, auto);
   border-radius: 45px;
-  border: 3px solid var(--contorno, #DCDCDC);
+  border: 3px solid var(--contorno, #dcdcdc);
 }
 body #campo_util .header {
   display: flex;
@@ -26,7 +26,7 @@ body #campo_util .header .campo_busca {
   align-items: center;
   justify-content: space-between;
   border-radius: 49px;
-  border: 3px solid var(--contorno, #DCDCDC);
+  border: 3px solid var(--contorno, #dcdcdc);
 }
 body #campo_util .header .campo_busca p {
   color: var(--subtitulo, rgba(0, 0, 0, 0.33));
@@ -65,7 +65,7 @@ body #campo_util .cabecalho .linha {
   stroke-width: 2px;
   stroke: rgba(0, 0, 0, 0.33);
 }
-body #campo_util .campo_modais p {
+body #campo_util .centro_modais p {
   color: var(--subtitulo, rgba(0, 0, 0, 0.33));
   /* subtitle */
   font-family: Noto Sans;
@@ -74,18 +74,23 @@ body #campo_util .campo_modais p {
   font-weight: 400;
   line-height: normal;
 }
-body #campo_util .campo_modais .modal1 {
-  width: 400px;
+body #campo_util .centro_modais .centro_modais__models {
+  display: flex;
+  justify-content: space-between;
+}
+body #campo_util .centro_modais .centro_modais__models .modal1 {
+  width: 380px;
   height: 151px;
   border-radius: 44px;
-  background: #295AA6;
+  background: #295aa6;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 24px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
 }
-body #campo_util .campo_modais .modal1 h1 {
-  color: #FFF;
+body #campo_util .centro_modais .centro_modais__models .modal1 h1 {
+  color: #fff;
   /* header */
   font-family: Oswald;
   font-size: 25px;
@@ -94,7 +99,7 @@ body #campo_util .campo_modais .modal1 h1 {
   line-height: normal;
   margin: 0;
 }
-body #campo_util .campo_modais .modal1 h2 {
+body #campo_util .centro_modais .centro_modais__models .modal1 h2 {
   color: rgba(255, 255, 255, 0.33);
   /* subtitle */
   font-family: Noto Sans;
@@ -103,6 +108,83 @@ body #campo_util .campo_modais .modal1 h2 {
   font-weight: 400;
   line-height: normal;
   margin: 0;
+}
+body #campo_util .centro_modais .centro_modais__models .modal1 img {
+  width: 77px;
+  height: 77px;
+  flex-shrink: 0;
+}
+body #campo_util .centro_modais .centro_modais__models .modal2 {
+  width: 380px;
+  height: 151px;
+  border-radius: 44px;
+  background: #ffc102;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+body #campo_util .centro_modais .centro_modais__models .modal2 h1 {
+  color: #fff;
+  /* header */
+  font-family: Oswald;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+body #campo_util .centro_modais .centro_modais__models .modal2 h2 {
+  color: rgba(255, 255, 255, 0.33);
+  /* subtitle */
+  font-family: Noto Sans;
+  font-size: 18.382px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+body #campo_util .centro_modais .centro_modais__models .modal2 img {
+  width: 77px;
+  height: 77px;
+  flex-shrink: 0;
+}
+body #campo_util .centro_modais .centro_modais__models .modal3 {
+  width: 380px;
+  height: 151px;
+  border-radius: 44px;
+  background: #c6202c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+body #campo_util .centro_modais .centro_modais__models .modal3 h1 {
+  color: #fff;
+  /* header */
+  font-family: Oswald;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+body #campo_util .centro_modais .centro_modais__models .modal3 h2 {
+  color: rgba(255, 255, 255, 0.33);
+  /* subtitle */
+  font-family: Noto Sans;
+  font-size: 18.382px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+body #campo_util .centro_modais .centro_modais__models .modal3 img {
+  width: 77px;
+  height: 77px;
+  flex-shrink: 0;
 }
 body #campo_util .tabela {
   display: flex;
@@ -118,11 +200,11 @@ body #campo_util .tabela p {
   line-height: normal;
 }
 body #campo_util .tabela .tabela__header {
-  width: 1253px;
+  width: auto;
   height: 69px;
   flex-shrink: 0;
   border-radius: 100px;
-  border: 2px solid var(--contorno, #DCDCDC);
+  border: 2px solid var(--contorno, #dcdcdc);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,10 +226,10 @@ body #campo_util .tabela .tabela__header .tabela__header__valor {
   gap: 20px;
 }
 body #campo_util .tabela .tabela__baixo {
-  width: 1253px;
+  width: auto;
   height: 69px;
   flex-shrink: 0;
-  border: 2px solid var(--contorno, #DCDCDC);
+  border: 2px solid var(--contorno, #dcdcdc);
   display: flex;
   align-items: center;
   justify-content: center;
